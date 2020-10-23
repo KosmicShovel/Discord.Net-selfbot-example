@@ -56,6 +56,8 @@ namespace Discord_Selfbot_Example
                                 Color = Color.Gold,
                                 Description = content
                             }.Build(), RequestOptions.Default);
+
+                            message.DeleteAsync(RequestOptions.Default);
                         }
                     }
                     return Task.CompletedTask;
